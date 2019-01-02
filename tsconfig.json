@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "target": "ES5",
-    "lib": ["esnext", "esnext.asynciterable"],
-    "moduleResolution": "node",
-    "module": "CommonJS",
-//    "baseUrl": ".",
-//    "paths": {
-//      "*": ["node_modules/"]
-//    },
-    "strict": true,
-//    "forceConsistentCasingInFileNames": true,
-//    "noImplicitReturns": true,
-//    //TODO: "noUnusedLocals": true,
-//    "sourceMap": true,
-//    "inlineSources": true,
-//    "typeRoots": ["node_modules/@types", "node_modules/@types/web3/eth"],
-//    "outDir": "dist",
-    "allowSyntheticDefaultImports": true
-  }
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/types/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
 }
